@@ -1,2 +1,2 @@
 # GoF_Design_Patterns
-Design Patterns examples in Java
+Design Patterns code snippets in Java
