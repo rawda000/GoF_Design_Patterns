@@ -5,6 +5,7 @@ public abstract class BasicEngineering {
         completeMath();
         completeSoftSkill();
         completeSpecialPaper();
+        if (isAdditionalPaperNeeded()) completeAdditionalPaper();
     }
 
     private void completeSoftSkill() {
@@ -13,6 +14,14 @@ public abstract class BasicEngineering {
 
     private void completeMath() {
         System.out.println("Math course");
+    }
+
+    public boolean isAdditionalPaperNeeded() {
+        return true;
+    }
+
+    private void completeAdditionalPaper() {
+        System.out.println("Additional Paper is needed for this course");
     }
 
     public abstract void completeSpecialPaper();

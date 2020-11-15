@@ -5,4 +5,9 @@ public class ComputerScience extends BasicEngineering{
     public void completeSpecialPaper() {
         System.out.println("Object Oriented Programming");
     }
+
+    @Override
+    public boolean isAdditionalPaperNeeded() {
+        return false;
+    }
 }

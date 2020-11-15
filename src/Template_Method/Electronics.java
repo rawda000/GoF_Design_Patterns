@@ -5,4 +5,5 @@ public class Electronics extends BasicEngineering {
     public void completeSpecialPaper() {
         System.out.println("Mechanical engineering course");
     }
+
 }
