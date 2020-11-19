@@ -16,7 +16,12 @@ public class Program {
         System.out.println("Employee1 is eligible " + employee1Eligible);
         System.out.println("Employee2 is eligible " + employee2Eligible);
         Employee andExpression = new EmployeeBuilder().buildExpression(individualEmployee, individualEmployee2, "and");
+        Employee orExpression = new EmployeeBuilder().buildExpression(individualEmployee, individualEmployee2, "or");
         boolean andExpressionEligible = andExpression.interpret(context);
         System.out.println("AndExpression is eligible " + andExpressionEligible);
+
+        Employee treeRule = new EmployeeBuilder().buildTree(individualEmployee, individualEmployee2,
+                andExpression, orExpression);
+        System.out.println("Tree Rule is eligible " + treeRule.interpret(context));
     }
 }
